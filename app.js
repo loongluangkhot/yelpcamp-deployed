@@ -30,8 +30,7 @@ app.use(flash());
 
 // SET UP DB
 // mongoose.connect('mongodb://localhost:27017/yelpcamp', { useNewUrlParser: true });
-var databaseURL = process.env.databaseURL;
-mongoose.connect(databaseURL, { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 
 // ADD SEED DATA
 // seedDB();
